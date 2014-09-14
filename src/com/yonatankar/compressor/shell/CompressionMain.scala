@@ -52,7 +52,7 @@ object CompressionMain {
     try {
       parse(args)
     } catch {
-      case e : Throwable => println(e.getMessage)
+      case e : Throwable => e.printStackTrace()
     }
   }
 }
